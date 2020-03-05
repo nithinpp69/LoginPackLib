@@ -1,0 +1,3 @@
+rootProject.name='LoginPackLib'
+include ':app'
+include ':loginpack'
