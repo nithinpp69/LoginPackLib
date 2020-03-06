@@ -34,7 +34,9 @@ allprojects {
   For Login (With dialog popup for success or failure) :
   
   ``` 
-  .isDialogue(true),.failureLayout(),.successLayout() need to be added only when dialog popup is required after login else exclude this as in the above case
+  (.isDialogue(true),.failureLayout(),.successLayout() need to be added only when dialog popup is required after login else exclude this as in the above case)
+  
+  
        new LoginPack.Builder()
                 .api("https://angular-backend-sayone.herokuapp.com/api/v1/rest-auth/login/")
                 .packageName("com.example.myapplication")
