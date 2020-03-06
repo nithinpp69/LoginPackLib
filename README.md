@@ -34,6 +34,7 @@ allprojects {
   If Login success dialogue required :
   
   ``` 
+  .isDialogue(true),.failureLayout(),.successLayout() need to be added only when dialog popup is required after login else exclude this as in the above case
        new LoginPack.Builder()
                 .api("https://angular-backend-sayone.herokuapp.com/api/v1/rest-auth/login/")
                 .packageName("com.example.myapplication")
@@ -46,8 +47,8 @@ allprojects {
                 .passwordFieldId("edtPassword")
                 .submitButtonId("btnSubmit")
                 .isDialogue(true)// should be true,only when popup dialogue required after login
-                .failureLayout(R.layout.failed_layout) // layout of the dialog,only when popup dialogue required after login
-                .successLayout(R.layout.sucess_layout) // layout of the dialog,only when popup dialogue required after login
+                .failureLayout(R.layout.failed_layout) // layout of the failure dialog
+                .successLayout(R.layout.sucess_layout) // layout of the success dialog
                 .build();
              
   ``` 
