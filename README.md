@@ -38,7 +38,7 @@ allprojects {
   
   
        new LoginPack.Builder()
-                .api("https://angular-backend-sayone.herokuapp.com/api/v1/rest-auth/login/")
+                .api(api url)
                 .packageName("com.example.myapplication")
                 .callback(this)
                 .delegate(this)
