@@ -29,9 +29,10 @@ allprojects {
                 .passwordFieldId()// id of password input filed
                 .submitButtonId()// id of submit button
                 .build();
-  ```          
-      If Login success dialogue required
-      ```
+  ```      
+  
+  If Login success dialogue required :
+     ``` 
        new LoginPack.Builder()
                 .api("https://angular-backend-sayone.herokuapp.com/api/v1/rest-auth/login/")
                 .packageName("com.example.myapplication")
@@ -47,5 +48,5 @@ allprojects {
                 .failureLayout(R.layout.failed_layout) // layout of the dialog,only when popup dialogue required after login
                 .successLayout(R.layout.sucess_layout) // layout of the dialog,only when popup dialogue required after login
                 .build();
-          ```      
-             
+               
+         ```    
