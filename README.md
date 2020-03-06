@@ -15,7 +15,7 @@ allprojects {
 	        implementation 'com.github.jubinSayone:LoginPackLib:v1.0.0'
 	}
   ```
-  If Login success dialoge after successful login not required
+  For Login (Without any dialog popup after login api call)
   ```
    new LoginPack.Builder()
                 .api() // login api
@@ -31,7 +31,7 @@ allprojects {
                 .build();
   ```      
   
-  If Login success dialogue required :
+  For Login (With dialog popup for success or failure) :
   
   ``` 
   .isDialogue(true),.failureLayout(),.successLayout() need to be added only when dialog popup is required after login else exclude this as in the above case
