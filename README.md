@@ -40,9 +40,9 @@ allprojects {
                 .emailFieldId("edtEmail")
                 .passwordFieldId("edtPassword")
                 .submitButtonId("btnSubmit")
-                .isDialogue(true)// should be true if dialog needed
-                .failureLayout(R.layout.failed_layout) // layout of the dialog
-                .successLayout(R.layout.sucess_layout) // layout of the dialog
+                .isDialogue(true)// should be true,only when popup dialogue required after login
+                .failureLayout(R.layout.failed_layout) // layout of the dialog,only when popup dialogue required after login
+                .successLayout(R.layout.sucess_layout) // layout of the dialog,only when popup dialogue required after login
                 .build();
                 
              
